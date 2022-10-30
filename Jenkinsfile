@@ -4,8 +4,7 @@ pipeline {
      options {
         //Disable concurrentbuilds for the same job
         disableConcurrentBuilds()
-        // Colorize the console log
-        ansiColor("xterm")          
+        // Colorize the console log        
         // Add timestamps to console log
         timestamps()
         
