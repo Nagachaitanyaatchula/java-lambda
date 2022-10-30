@@ -56,7 +56,7 @@ pipeline {
                     sh 'aws configure set aws_access_key_id $AWS-ACCESS-KEY'
                     sh 'aws configure set aws_secret_access_key $AWS-SECRET-KEY'
                     sh 'aws configure set region us-east-2' 
-                    sh "aws s3 cp target/${JARNAME} s3://bermtec228/lambda-test/"
+                    sh "aws s3 cp target/${JARNAME} s3://aws-bucket-s/lambda-test/"
 
 
                     sh "aws lambda update-function-code --function-name test  --zip-file fileb://target/${JARNAME}"
